@@ -1,7 +1,7 @@
 
 
 .container{
-    background-color: red;
+    background-color:var(--skin-color);
     display:flex;
     height: 100px;
     padding: 0 50px;
@@ -9,6 +9,7 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .item{
     flex: 1;

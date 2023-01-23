@@ -1,0 +1,41 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: var(--skin-color);
+    /* position: relative; */
+    
+} 
+/* .Image{
+    width: 100%;
+    height: 100%;
+} */
+.title{
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 50px;
+}
+.grNext{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+.grPrevious{
+    /* position: absolute; */
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+   color: #fff;
+}
+.cc{
+    background-color: var(--skin-colorz);
+}
+
+
+
+.imageContainer{
+    position: relative;
+}
+.imageContainer >img{
+ width: 100%;
+ height: 100%;
+}
