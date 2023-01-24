@@ -103,7 +103,7 @@
  .cartPlus{
      height: 59px;
      width: 60px;
-     color: var(--bg-black-100);
+     color:white;
      cursor: pointer;
  }
 
