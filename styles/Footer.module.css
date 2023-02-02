@@ -1,0 +1,33 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: #222;
+    display:flex;
+}
+
+.item{
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+.item:last-child{
+   
+  margin-top: 100px;
+    justify-content: center;
+}
+
+.card{
+   flex: 1; 
+   padding:0 20px
+}
+.title{
+   font-size: 18px; 
+   color: #b7903c;
+}
+.text{
+    color: var(--bg-black-50);
+    margin: 10px 0;
+}
+.motto{
+    color: var(--bg-black-50);
+
+}

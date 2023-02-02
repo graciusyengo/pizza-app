@@ -5,9 +5,24 @@
     align-items: center;
     justify-content: center;
     padding:20px 40px ;
+    
+    
 }
 .title{
     font-family: 18px;
     font-weight: bold;
-    color:#666
+    color:var(--skin-color);
+    cursor: pointer;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color:var(--text-back-700);
+}
+.desc{
+    text-align: center;
+    color: var(--text-back-700);
+}
+.imgPizza{
+    cursor: pointer;
 }
