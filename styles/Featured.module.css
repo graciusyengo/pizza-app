@@ -2,27 +2,99 @@
     height: calc(100vh - 100px);
     background-color: var(--skin-color);
     position: relative;
-    
-    /* position: relative; */
-    
+    overflow: hidden; 
 } 
-/* .Image{
-    width: 100%;
+.wrapper{
+    width: 300vw ;
     height: 100%;
-} */
-.title{
-    position: absolute;
-    top: 0;
-    color: white;
-    font-size: 50px;
+    display: flex;
+    transition: all 1.5s ease-in-out;
 }
-
 .imageContainer{
+    width: 100vw ;
     position: relative;
+    height: 100%;
 }
 .imageContainer >img{
  width: 100%;
  height: 100%;
+}
+.containerTitle{
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    color: white;
+    font-size: 100px;
+}
+.containerTitle .containerHotSpicy{
+    text-align: center;
+}
+.hotSpicy{
+    font-weight: 800;
+    font-size: 3rem;
+    margin: -36px;
+}
+.title{
+    position: relative;
+}
+.title::after{
+    content: "";
+    background-color:white;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    top: 80%;
+    right: 34%;
+
+}
+.containerDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ margin: -28px;
+ font-weight: 500;
+ 
+}
+.detail{
+    position: relative;
+}
+.detailReduction{
+    position: relative;
+}
+.detailOrder{
+    position: relative;
+    font-size: 23px;
+
+}
+.detailReduction::after{
+    content: "";
+    background-color:white;
+    width: 130px;
+    height: 4px;
+    position: absolute;
+    top: 80%;
+    right: 2%;
+
+}
+.detailOrder::after{
+    content: "";
+    background-color:white;
+    width: 130px;
+    height: 3px;
+    position: absolute;
+    top: 80%;
+    right: 2%;
+
+}
+
+.span::after{
+    content: "";
+    background-color:white;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    top: 80%;
+    right: 34%;
 }
 .BiCaretRight{
  size: 100px;
@@ -30,6 +102,7 @@
  top: 25%;
  left: 80%;
  color: white;
+ cursor: pointer;
 }
 .BiCaretLeft{
    position: absolute;
@@ -37,7 +110,9 @@
    left: 3%;
    color: white;
    z-index: 1;
+   cursor: pointer;
    }
+  
 
 
 
