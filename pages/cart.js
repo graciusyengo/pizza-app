@@ -45,6 +45,99 @@ export default function Cart() {
               <span className={styles.total}> $39.80</span>
             </td>
           </tr>
+          <tr>
+            <td>
+              <div className={styles.imgContainer}>
+                <Image
+                  src="/img/pizza-removebg-preview.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                  objectFit="cover"
+                />
+              </div>
+            </td>
+            <td>
+              <span className={styles.name}> CORALZO</span>
+            </td>
+            <td>
+              <span className={styles.extras}>
+                {" "}
+                Double ingredients, spicy sauce
+              </span>
+            </td>
+            <td>
+              <span className={styles.price}> $19.90</span>
+            </td>
+            <td>
+              <span className={styles.quantity}> 2</span>
+            </td>
+            <td>
+              <span className={styles.total}> $39.80</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div className={styles.imgContainer}>
+                <Image
+                  src="/img/pizza-removebg-preview.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                  objectFit="cover"
+                />
+              </div>
+            </td>
+            <td>
+              <span className={styles.name}> CORALZO</span>
+            </td>
+            <td>
+              <span className={styles.extras}>
+                {" "}
+                Double ingredients, spicy sauce
+              </span>
+            </td>
+            <td>
+              <span className={styles.price}> $19.90</span>
+            </td>
+            <td>
+              <span className={styles.quantity}> 2</span>
+            </td>
+            <td>
+              <span className={styles.total}> $39.80</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div className={styles.imgContainer}>
+                <Image
+                  src="/img/pizza-removebg-preview.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                  objectFit="cover"
+                />
+              </div>
+            </td>
+            <td>
+              <span className={styles.name}> CORALZO</span>
+            </td>
+            <td>
+              <span className={styles.extras}>
+                {" "}
+                Double ingredients, spicy sauce
+              </span>
+            </td>
+            <td>
+              <span className={styles.price}> $19.90</span>
+            </td>
+            <td>
+              <span className={styles.quantity}> 2</span>
+            </td>
+            <td>
+              <span className={styles.total}> $39.80</span>
+            </td>
+          </tr>
         </table>
       </div>
       <div className={styles.right}>
@@ -59,7 +152,7 @@ export default function Cart() {
          <div className={styles.totalText}>
            <b className={styles.totalTextTitle}>Total</b>$79.60
          </div>
-         <button>CHECKOUT NOW!</button>
+         <button className={styles.button}>CHECKOUT NOW!</button>
 
         </div>
       </div>

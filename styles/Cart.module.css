@@ -1,34 +1,58 @@
-.container{
-    padding: 50px;
-    display:flex
-
+.container {
+  padding: 50px;
+  display: flex;
 }
-.left{
-    flex: 2;
+.left {
+  flex: 2;
 }
-.right{
-    flex:1
+.right {
+  flex: 1;
 }
-.imgContainer{
+.imgContainer {
   width: 100px;
   height: 100px;
   position: relative;
 }
-.table{
-    width: 100%;
-   
+.table {
+  width: 100%;
 }
-.name{
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--skin-color);
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--skin-color);
 }
-.extras,.price,.quantity, .total{
-    font-size: 1rem;
-
-
+.extras,
+.price,
+.quantity,
+.total{
+  font-size: 1rem;
 }
 .wrapper{
+  background-color: #333;  
+  width: 90%;
+  max-height: 300px;
+  padding: 10Px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var( --bg-black-100);
+}
+.totalTextTitle{
+    margin-right: 10px;
+}
+.button{
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: var(--skin-color);
+    color: var(--bg-black-100);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+  transition: all 0.3s ease;
+}
+.button:hover{
+    transform: scaleX(1.05);
     
 }
 
