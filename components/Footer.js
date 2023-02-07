@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <Image src="/img/featured.png" alt="" width={600} height={600} />
+        <Image src="/img/featured.png" alt="" width={600} height={636} />
       </div>
       <div className={styles.item}>
         <div className={styles.card}>
