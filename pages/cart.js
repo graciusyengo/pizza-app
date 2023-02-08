@@ -1,11 +1,11 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
-
 export default function Cart() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <table className={styles.table}>
+          <thead>
           <tr className={styles.tr}>
             <th>Product</th>
             <th>Name</th>
@@ -14,6 +14,8 @@ export default function Cart() {
             <th>Quantity</th>
             <th>Total</th>
           </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>
               <div className={styles.imgContainer}>
@@ -22,7 +24,7 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-                  objectFit="cover"
+              
                 />
               </div>
             </td>
@@ -31,7 +33,7 @@ export default function Cart() {
             </td>
             <td>
               <span className={styles.extras}>
-                {" "}
+                
                 Double ingredients, spicy sauce
               </span>
             </td>
@@ -53,7 +55,7 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-                  objectFit="cover"
+                  
                 />
               </div>
             </td>
@@ -62,7 +64,7 @@ export default function Cart() {
             </td>
             <td>
               <span className={styles.extras}>
-                {" "}
+              
                 Double ingredients, spicy sauce
               </span>
             </td>
@@ -84,7 +86,7 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-                  objectFit="cover"
+                
                 />
               </div>
             </td>
@@ -93,7 +95,7 @@ export default function Cart() {
             </td>
             <td>
               <span className={styles.extras}>
-                {" "}
+                
                 Double ingredients, spicy sauce
               </span>
             </td>
@@ -115,7 +117,7 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-                  objectFit="cover"
+              
                 />
               </div>
             </td>
@@ -124,7 +126,7 @@ export default function Cart() {
             </td>
             <td>
               <span className={styles.extras}>
-                {" "}
+                
                 Double ingredients, spicy sauce
               </span>
             </td>
@@ -138,6 +140,7 @@ export default function Cart() {
               <span className={styles.total}> $39.80</span>
             </td>
           </tr>
+          </tbody>
         </table>
       </div>
       <div className={styles.right}>

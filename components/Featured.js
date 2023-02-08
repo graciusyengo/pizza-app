@@ -26,7 +26,7 @@ export default function Featured() {
       <BiCaretLeft
         className={styles.BiCaretLeft}
         size="200px"
-        objectFit="contain"
+    
         onClick={() => handleArrow("l")}
       />
       <div
@@ -39,7 +39,7 @@ export default function Featured() {
               className="mainImage"
               src={image}
               alt=""
-              objectFit="contain"
+              
               width={800}
               height={800}
             />
@@ -61,7 +61,7 @@ export default function Featured() {
       <BiCaretRight
         className={styles.BiCaretRight}
         size="200px"
-        objectFit="contain"
+        ObjectFit="contain"
         onClick={() => handleArrow("r")}
       />
     </div>
