@@ -24,7 +24,6 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-              
                 />
               </div>
             </td>
@@ -117,7 +116,6 @@ export default function Cart() {
                   alt=""
                   width={100}
                   height={100}
-              
                 />
               </div>
             </td>
@@ -156,7 +154,6 @@ export default function Cart() {
            <b className={styles.totalTextTitle}>Total</b>$79.60
          </div>
          <button className={styles.button}>CHECKOUT NOW!</button>
-
         </div>
       </div>
     </div>
