@@ -18,8 +18,8 @@ body{
   font-family: "poppins", sans-serif;
 }
 span{
-  display: block;
-  font-size: 2rem;
+  display: inline;
+
 }
 p{
  margin: 20px 0;

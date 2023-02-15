@@ -1,7 +1,6 @@
 import styles from "../../styles/Product.module.css";
 import Image from "next/image";
 import { useState } from "react";
-
 export default function Product() {
   const [size, setSize] = useState(0);
   const pizza = {
@@ -100,7 +99,6 @@ export default function Product() {
         <div className={styles.add}>
           <input type="number" defaultValue={1} className={styles.quantity} />
           <button className={styles.button}> Add to cart </button>
-
         </div>
       </div>
     </div>

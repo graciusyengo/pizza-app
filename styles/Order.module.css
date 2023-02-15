@@ -34,22 +34,26 @@
     margin-right: 10px;
 
 }
+.row:last-child{
+    display: flex;
+    justify-content: center;
+}
 
 .mdpaid{
 color: rgb(44, 209, 209);
-font-size: 40px;
-transition: all ease ;
+font-size: 26px;
+
 
 }
 .mdpaid:hover{
    color: rgb(221, 27, 27);
-    font-size: 40px;
+    font-size:26px;
     cursor: pointer;
     
     }
     .BsFillPatchCheckFill{
         color: aqua;
-        font-size: 40px;
+        font-size: 26px;
 
     }
 .button{
