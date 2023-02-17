@@ -2,7 +2,9 @@ import Image from "next/image";
 import styles from "../../styles/Order.module.css";
 import { MdOutlinePaid } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-
+import { GiEating} from "react-icons/gi";
+import {FaMotorcycle} from "react-icons/fa";
+import {FaUserCheck} from "react-icons/fa"
 export default function Order() {
   return (
     <div className={styles.container}>
@@ -44,21 +46,21 @@ export default function Order() {
             </div>
           </div>
           <div className={styles.status}>
-            <MdOutlinePaid className={styles.mdpaid} />
+          <GiEating className={styles.GiEating} />
             <span>preparing</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
           <div className={styles.status}>
-            <MdOutlinePaid className={styles.mdpaid} />
+          <FaMotorcycle className={styles.FaMotorcycle}/>
             <span>On the way</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
           <div className={styles.status}>
-            <MdOutlinePaid className={styles.mdpaid} />
+          <FaUserCheck className={styles.FaUserCheck}/>
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />

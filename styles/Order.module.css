@@ -38,24 +38,24 @@
     display: flex;
     justify-content: center;
 }
+.status{
+    display: flex;
+    flex-direction: column;
+    margin-right: 17px;
+}
 
-.mdpaid{
+.mdpaid, .BsFillPatchCheckFill, .GiEating, .FaMotorcycle, .FaUserCheck{
 color: rgb(44, 209, 209);
 font-size: 26px;
-
-
 }
-.mdpaid:hover{
+
+.mdpaid:hover, .BsFillPatchCheckFill:hover, .GiEating:hover, .FaMotorcycle:hover, .FaUserCheck:hover {
    color: rgb(221, 27, 27);
     font-size:26px;
     cursor: pointer;
     
     }
-    .BsFillPatchCheckFill{
-        color: aqua;
-        font-size: 26px;
 
-    }
 .button{
     background-color:var(--bg-black-100) ;
     height: 30px;
