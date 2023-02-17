@@ -32,30 +32,54 @@
   }
 .totalTextTitle{
     margin-right: 10px;
-
 }
 .row:last-child{
+    width: 80%;
     display: flex;
-    justify-content: center;
-}
-.status{
-    display: flex;
-    flex-direction: column;
-    margin-right: 17px;
+    justify-content: space-between;
+    
 }
 
-.mdpaid, .BsFillPatchCheckFill, .GiEating, .FaMotorcycle, .FaUserCheck{
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease  infinite alternate;
+}
+@keyframes inProgress{
+   from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+.unDone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+
+}
+.mdpaid,  .GiEating, .BsFillPatchCheckFill,.FaMotorcycle, .FaUserCheck{
 color: rgb(44, 209, 209);
 font-size: 26px;
 }
-
-.mdpaid:hover, .BsFillPatchCheckFill:hover, .GiEating:hover, .FaMotorcycle:hover, .FaUserCheck:hover {
+.mdpaid:hover, .GiEating:hover,.BsFillPatchCheckFill:hover, .FaMotorcycle:hover, .FaUserCheck:hover {
    color: rgb(221, 27, 27);
     font-size:26px;
     cursor: pointer;
-    
     }
+  .unDone   .BsFillPatchCheckFill, .inProgress .BsFillPatchCheckFill{
+        display: none;
 
+    }
 .button{
     background-color:var(--bg-black-100) ;
     height: 30px;

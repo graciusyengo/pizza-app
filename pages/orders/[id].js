@@ -6,6 +6,13 @@ import { GiEating} from "react-icons/gi";
 import {FaMotorcycle} from "react-icons/fa";
 import {FaUserCheck} from "react-icons/fa"
 export default function Order() {
+  const status=0
+  const statusClass=(index)=>{
+    if(index-status<1) return styles.done
+    if(index-status===1) return styles.inProgress
+    if(index-status>1) return styles.unDone
+
+  }
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -38,28 +45,28 @@ export default function Order() {
           </table>
         </div>
         <div className={styles.row}>
-          <div className={styles.status}>
+          <div className={statusClass(0)}>
             <MdOutlinePaid className={styles.mdpaid} />
             <span>payement</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(1)}>
           <GiEating className={styles.GiEating} />
             <span>preparing</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(2)}>
           <FaMotorcycle className={styles.FaMotorcycle}/>
             <span>On the way</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(3)}>
           <FaUserCheck className={styles.FaUserCheck}/>
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
