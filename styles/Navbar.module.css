@@ -19,7 +19,6 @@
 .item:nth-child(2){
     flex: 4;
     
-
 }
 .item:last-child{
     justify-content: flex-end ;
@@ -98,10 +97,31 @@
     text-align: center;
 }
  .cartPlus{
-     height: 59px;
-     width: 60px;
+     height: 55px;
+     width: 55px;
      color:white;
      cursor: pointer;
+ }
+
+ @media screen and (max-width :480px) {
+    .item:nth-child(2){
+        display: none;
+        
+    }
+    .cart{
+        position: relative;
+        display: flex;
+        margin-left: 11px;
+        align-items: center;
+        justify-content: center;
+    }
+    .cartPlus{
+        height: 40px;
+        width: 40px;
+        color:white;
+        cursor: pointer;
+    }
+        
  }
 
  
