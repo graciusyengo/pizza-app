@@ -7,7 +7,7 @@ import Footer from './Footer'
      <div>
        <Navbar/>
        {children}
-       {/* <Footer/> */}
+       <Footer/>
      </div>
    )
  }

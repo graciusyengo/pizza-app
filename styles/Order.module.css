@@ -88,3 +88,60 @@ font-size: 26px;
     margin-top: 20px;
     cursor:not-allowed
 }
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+    }
+    .thead{
+        display: none;
+    }
+    .tr{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .id,
+.name,
+
+.adress,
+.total{
+  font-size: 1.3rem;
+}
+.id::before{
+    content: "Order ID :";
+    font-weight: 700;
+
+}
+.name::before{
+    content: "Customer :";
+    font-weight: 700;
+    
+}
+.adress::before{
+    content: "Adress :";
+    font-weight: bold;
+    
+}
+.total::before{
+    content: "Total :";
+    font-weight: bold;
+    
+}
+.row:last-child{
+    width: 100%;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    
+}
+.done,.unDone,.inProgress{
+    margin-bottom: 20px;
+}
+.wrapper{
+    width: 100%;
+}
+
+    
+}

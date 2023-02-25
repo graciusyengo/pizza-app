@@ -118,3 +118,41 @@
     transform: scale(1.05);
   
   }
+  @media screen and (max-width:480px) {
+    .container{
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+    .imgContainer {
+      width: 75vw;
+      height: 55vh;
+      position: relative;
+    }
+    .sizes {
+    
+      width: 100%;
+      padding: 0px 10px;
+    }
+    .ingredients {
+      flex-direction: column;
+    }
+    .option{
+      margin: 16px;
+      font-size: 16px;
+    }
+    .label{
+      margin-left: 10px;
+    }
+    .checkbox{
+      width: 25px;
+      height: 25px;
+
+    }
+    .quantity,.button{
+      height: 50px;
+      padding: 0 15px;
+    }
+    
+  }

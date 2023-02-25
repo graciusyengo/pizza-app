@@ -18,8 +18,8 @@ export default function Product() {
             src={pizza.img}
             alt=""
             objectFit="contain"
-            width={500}
-            height={500}
+            width={300}
+            height={350}
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Product() {
               name="double"
               className={styles.checkbox}
             />
-            <label htmlFor="double"> Double Ingrenients</label>
+            <label htmlFor="double" className={styles.label}> Double Ingrenients</label>
           </div>
           <div className={styles.option}>
             <input
@@ -75,7 +75,7 @@ export default function Product() {
               name="cheese"
               className={styles.checkbox}
             />
-            <label htmlFor="cheese"> Extra cheese</label>
+            <label htmlFor="cheese" className={styles.label}> Extra cheese</label>
           </div>
           <div className={styles.option}>
             <input
@@ -84,7 +84,7 @@ export default function Product() {
               name="spicy"
               className={styles.checkbox}
             />
-            <label htmlFor="spicy"> Spicy Sauce</label>
+            <label htmlFor="spicy" className={styles.label}> Spicy Sauce</label>
           </div>
           <div className={styles.option}>
             <input
@@ -93,7 +93,7 @@ export default function Product() {
               name="garlic "
               className={styles.checkbox}
             />
-            <label htmlFor="garlic"> Garlic Sauce</label>
+            <label htmlFor="garlic" className={styles.label}> Garlic Sauce</label>
           </div>
         </div>
         <div className={styles.add}>

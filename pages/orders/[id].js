@@ -2,23 +2,22 @@ import Image from "next/image";
 import styles from "../../styles/Order.module.css";
 import { MdOutlinePaid } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import { GiEating} from "react-icons/gi";
-import {FaMotorcycle} from "react-icons/fa";
-import {FaUserCheck} from "react-icons/fa"
+import { GiEating } from "react-icons/gi";
+import { FaMotorcycle } from "react-icons/fa";
+import { FaUserCheck } from "react-icons/fa";
 export default function Order() {
-  const status=0
-  const statusClass=(index)=>{
-    if(index-status<1) return styles.done
-    if(index-status===1) return styles.inProgress
-    if(index-status>1) return styles.unDone
-
-  }
+  const status = 0;
+  const statusClass = (index) => {
+    if (index - status < 1) return styles.done;
+    if (index - status === 1) return styles.inProgress;
+    if (index - status > 1) return styles.unDone;
+  };
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <thead>
+            <thead className={styles.thead}>
               <tr className={styles.tr}>
                 <th>Order</th>
                 <th>Customer</th>
@@ -27,7 +26,7 @@ export default function Order() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr className={styles.tr}>
                 <td>
                   <span className={styles.id}> 12345</span>
                 </td>
@@ -47,27 +46,27 @@ export default function Order() {
         <div className={styles.row}>
           <div className={statusClass(0)}>
             <MdOutlinePaid className={styles.mdpaid} />
-            <span>payement</span>
+            <span>Payement</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
           <div className={statusClass(1)}>
-          <GiEating className={styles.GiEating} />
-            <span>preparing</span>
+            <GiEating className={styles.GiEating} />
+            <span>Preparing</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
           <div className={statusClass(2)}>
-          <FaMotorcycle className={styles.FaMotorcycle}/>
+            <FaMotorcycle className={styles.FaMotorcycle} />
             <span>On the way</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />
             </div>
           </div>
           <div className={statusClass(3)}>
-          <FaUserCheck className={styles.FaUserCheck}/>
+            <FaUserCheck className={styles.FaUserCheck} />
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
               <BsFillPatchCheckFill className={styles.BsFillPatchCheckFill} />

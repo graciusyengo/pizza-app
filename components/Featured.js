@@ -11,7 +11,7 @@ export default function Featured() {
     "/img/featured.png",
     "/img/featured1.png",
   ];
- 
+
   const handleArrow = (direction) => {
     if (direction === "l") {
       setIndex(index !== 0 ? index - 1 : 2);
@@ -25,8 +25,7 @@ export default function Featured() {
     <div className={styles["container"]}>
       <BiCaretLeft
         className={styles.BiCaretLeft}
-        size="200px"
-    
+        
         onClick={() => handleArrow("l")}
       />
       <div
@@ -39,16 +38,14 @@ export default function Featured() {
               className="mainImage"
               src={image}
               alt=""
-              
               width={800}
               height={800}
             />
-          
           </div>
         ))}
         <div className={styles.containerTitle}>
-          <div className={styles.containerHotSpicy} >
-          <h6 className={styles.hotSpicy}> Hot & Spicy</h6>
+          <div className={styles.containerHotSpicy}>
+            <h6 className={styles.hotSpicy}> Hot & Spicy</h6>
           </div>
           <h2 className={styles.title}>Pizza</h2>
           <div className={styles.containerDetail}>
@@ -60,8 +57,8 @@ export default function Featured() {
       </div>
       <BiCaretRight
         className={styles.BiCaretRight}
-        size="200px"
-        ObjectFit="contain"
+        // size="200px"
+        // ObjectFit="contain"
         onClick={() => handleArrow("r")}
       />
     </div>

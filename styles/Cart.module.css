@@ -57,4 +57,54 @@
     transform: scaleX(1.05);
     
 }
+@media screen and (max-width:480px) {
+  .container{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thead{
+    display: none;
+
+  }
+  .tr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+  }
+  .name,.total{
+    font-size: 24px;
+  }
+  .imgContainer {
+   width: 40vw;
+   height: 35vh;
+  
+  }
+  .extras,.price,.quantity{
+    font-size: 22px;
+  }
+  .price::before{
+    content: "Price :";
+    font-weight: bold;
+  }
+  .quantity::before{
+    content: "Quantity :";
+    font-weight: bold;
+  }
+  .total::before{
+    content: "Total :";
+    font-weight: bold;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  
+}
 
