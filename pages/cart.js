@@ -30,7 +30,7 @@ export default function Cart() {
               <td>
                 <span className={styles.name}> CORALZO</span>
               </td>
-              <td>
+              <td className={styles.tdExtras}>
                 <span className={styles.extras}>
                   Double ingredients, spicy sauce
                 </span>
@@ -59,7 +59,7 @@ export default function Cart() {
               <td>
                 <span className={styles.name}> CORALZO</span>
               </td>
-              <td>
+              <td className={styles.tdExtras}>
                 <span className={styles.extras}>
                   Double ingredients, spicy sauce
                 </span>
@@ -88,7 +88,7 @@ export default function Cart() {
               <td>
                 <span className={styles.name}> CORALZO</span>
               </td>
-              <td>
+              <td className={styles.tdExtras}>
                 <span className={styles.extras}>
                   Double ingredients, spicy sauce
                 </span>
@@ -117,7 +117,7 @@ export default function Cart() {
               <td>
                 <span className={styles.name}> CORALZO</span>
               </td>
-              <td>
+              <td className={styles.tdExtras}>
                 <span className={styles.extras}>
                   Double ingredients, spicy sauce
                 </span>

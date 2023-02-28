@@ -90,6 +90,10 @@
   .extras,.price,.quantity{
     font-size: 22px;
   }
+.tdExtras{
+  text-align: center;
+}
+ 
   .price::before{
     content: "Price :";
     font-weight: bold;
