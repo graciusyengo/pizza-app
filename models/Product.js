@@ -30,4 +30,4 @@ extrasOptions:{
 },
 {timestamps:true});
 
-export default  mongoose.models.Product()|| mongoose.model("Product",ProductSchema)
+export default  mongoose.models.Product|| mongoose.model("Product",ProductSchema)
