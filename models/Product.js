@@ -19,7 +19,7 @@ img:{
     type:String,
     required:true,
 },
-extrasOptions:{
+extraOption:{
     type:[
         {
             text:{type:String,required:true},
