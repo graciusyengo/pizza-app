@@ -1,3 +1,4 @@
+import axios from "axios"
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
@@ -6,7 +7,7 @@ import PizzaList from "../components/PizzaList";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({pizzaList}) {
   return (
     <>
       <Head>
@@ -17,8 +18,18 @@ export default function Home() {
       </Head>
       <div className={styles.description}>
         <Featured />
-        <PizzaList/>
+        <PizzaList pizzaList={pizzaList}/>
       </div>
     </>
   );
 }
+export const getServerSideProps= async ()=>{
+  const res = await axios.get("http://localhost:3000/api/products")
+
+  return{
+    props:{
+      pizzaList:res.data
+    }
+  }
+}
+

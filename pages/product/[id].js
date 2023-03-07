@@ -18,7 +18,7 @@ export default function Product() {
             src={pizza.img}
             alt=""
             objectFit="contain"
-            width={300}
+            width={500}
             height={350}
           />
         </div>
