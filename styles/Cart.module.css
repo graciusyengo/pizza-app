@@ -23,11 +23,19 @@
   font-weight: 500;
   color: var(--skin-color);
 }
+.tdExtras{
+  text-align: center;
+
+}
 .extras,
 .price,
 .quantity,
 .total{
   font-size: 1rem;
+  
+}
+.extras{
+  margin-right: 6px;
 }
 .wrapper{
   background-color: #333;  

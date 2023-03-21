@@ -3,8 +3,11 @@ import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
 // import {FaCartPlus} from 'rea'
 import { FaCartPlus } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import Link from "next/link";
 
 export default function Navbar() {
+  const quantity = useSelector((state) => state.cart.quantity);
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -30,12 +33,14 @@ export default function Navbar() {
           <li className={styles.listItem}>Contact</li>
         </ul>
       </div>
-      <div className={styles.item}>
-        <div className={styles.cart}>
-          <FaCartPlus className={styles.cartPlus} />
-          <div className={styles.counter}>2</div>
+      <Link href="/cart">
+        <div className={styles.item}>
+          <div className={styles.cart}>
+            <FaCartPlus className={styles.cartPlus} />
+            <div className={styles.counter}>{quantity}</div>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
