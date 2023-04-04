@@ -1,4 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {
+    PayPalScriptProvider,
+    PayPalButtons,
+    usePayPalScriptReducer
+} from "@paypal/react-paypal-js";
+
+// This values are the props in the UI
+const amount = "2";
+const currency = "USD";
+const style = {"layout":"vertical"};
+
 export const cartSlice = createSlice({
   name: "cart",
   initialState: {
